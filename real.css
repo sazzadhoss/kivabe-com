@@ -1,0 +1,404 @@
+
+/*----------- global style start---------------- */
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin:0;
+   
+}
+
+.container{
+    backgroun-color:purple;
+     max-width:1170px;
+    padding: 15px;
+    margin:0 auto;
+    border:2px solid #dedede;
+   
+}
+.clearfix{
+    clear:both;
+}
+img {
+   max-width:100%;
+   height:auto;
+   
+}
+.text-center{
+    text-align:center;
+}
+/* -----------global style end -------------------*/
+
+
+
+/* header style start */
+.logo{
+    float:left;
+}
+.userarea{
+    float:right;
+    padding-top:0px; 
+   
+}
+.userarea a {
+    display: inline-block; 
+   /* width:200px; */
+  line-height: 50px;
+   padding:0px 10px;
+   background-color:#1a0606;
+   color:peru;
+   text-decoration:none;
+   font-family: sans-serif;
+   border-radius:5px;
+}
+.userarea a:hover{
+    background-color:#321515;
+    transition:all 0.6s ease;
+}
+/* header style end */
+
+
+/*------------------ Menu style start--------------- */
+.menu_container{
+    padding:15px 0px;
+}
+.nav-menu{
+    width:100%;
+    display: inline-block;
+    background-color:olivedrab; 
+    z-index:999px;
+}
+.nav-menu ul{
+ padding:0;
+ margin:0;
+}
+.nav-menu>ul>li {
+    float:left;
+    list-style: none;
+    padding: 10px;
+    position: relative;
+}
+.nav-menu li>.sub-menu{
+    position: absolute;
+    top:50px;
+    left:0;
+}
+.sub-menu{
+    background: #dedede;
+    width:150px;
+    display:none;
+}
+.sub-menu a{
+    width:100%;
+}
+.nav-menu li {
+    list-style:none;
+}
+.nav-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding:0 15px;
+    line-height:40px;
+    color:black;
+}
+.nav-menu>ul>li:hover .sub-menu {
+    display: block;
+}
+.nav-menu li a:hover {
+    background-color: aquamarine;
+    transition:all 0.9s ease;
+   
+}
+/*--------------------------- Menu style end------------------ */
+
+/* Banner section start */
+    .banner{
+        padding:15px 0;
+        z-index:0;
+    }
+    .banner .item{
+        position: relative;
+        overflow:hidden; 
+       
+    }
+    .banner .item-title{
+        position: absolute;
+        left:0;
+        bottom:60px;
+        background-color:rgba(0,0,0,0.43);
+        color:white;
+        right:0;
+        text-align:center;
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+   .banner .item:hover .item-title{
+       bottom:3px;
+       opacity:1;
+   }
+        
+    }
+/* Banner section end */
+
+/* Grid style start */
+    .row{
+        margin-right:-15px;
+        margin-left:-15px;
+    }
+    .hello .col-2{
+        margin: 0px;
+        padding: -15px;
+    }
+    .col-2{
+        width:50%;
+        float:left;
+        padding:0 15px;
+    }
+    .col-3{
+        width: 33.33%;
+        float:left;
+        padding: 0 15px;
+       
+    }
+    .col-32{
+        width: 66.66%;
+        float:left;
+        padding: 0 15px;
+        
+    }
+    .col-4{
+        width: 25%;
+        float:left;
+        padding: 0 15px;
+       
+    }
+    
+    
+    .col-4 article{
+        background-color:burlywood;
+        padding:10px;
+    }
+    .clearfix{
+        clear:both;
+    }
+
+    /* ------------contact us-------------- */
+        .contact-us input{
+            line-height:35px;
+            width:100%;
+            display: inline-block;
+            padding:0 10px;
+            margin-bottom:15px;
+        }
+        .contact-us textarea{
+            line-height:15px;
+            width:100%;
+            display: inline-block;
+            padding:0 10px;
+            margin-bottom:15px;
+            width: 348px;
+            height: 151px;
+        } 
+        .btn{
+            background-color:yellowgreen;
+            padding:15px;
+            color:#171211;
+            transform: all 0.25;
+            font-size:20px;
+
+        }
+        .maps{
+            margin:30px 0px;
+        }
+        
+    /* ------------contact us end---------- */
+/* Grid style end */
+
+/*----------------- sidebar style start-------------------- */
+       #side_bar{
+           padding-top:15px;
+       } 
+    .widgets{
+            padding:20px;
+            border:1px solid #cdcdcd;
+            margin-bottom: 30px;
+          
+        }
+    .subscribe input{
+            line-height:35px;
+            width:100%;
+            display: inline-block;
+            padding:0 10px;
+        }
+    .subscribe .btn{
+            padding: 10px 10px;
+            display: inline-block;
+            margin:10px;
+          
+        }
+        .widgets .widgets-title{
+            margin-top:0;
+
+        }
+        .widgets ul{
+            padding: 0;
+            margin:0;
+        }
+        .widgets ul li{
+            list-style: none;
+            margin:15px 0;
+            margin-right:-15px;
+           
+          
+        }
+        .widgets>ul >li >a{
+            text-decoration: none;
+            color:black;
+           padding:0 15px;
+            margin:5px 0;
+            width:100%;
+            display: inline-block;
+            line-height:25px;
+        }
+        .widgets>ul >li >a:hover{
+            background-color:#663866;
+            transition:all 0.25s;
+        }
+        .subscribe{
+            text-align:center;
+        }
+        .btn:hover{
+            background: #321515;
+            color:white;
+            cursor:pointer;
+            border:0px solid transparent;
+            ;
+        }
+/*----------------- sidebar style end---------------------- */
+
+/* post style start */
+.post .post-title{
+    margin:6px 0;
+}
+    .post .post-title a{
+        color:blueviolet;
+        text-decoration: none;
+        transition:color 0.9s;
+        display: inline-block;
+        width:100%
+    }
+    .post .post-title+p{
+        margion-top:0;
+    }
+    .post .post-title a:hover{
+        background-color:yellowgreen;
+    }
+   
+/* post style end */
+/*--------------- submenu start-------------*/
+/* .sub-menu li{
+    position:absolute;
+    left:-99999px;
+
+} */
+/* .nav-menu ul li:hover .sub-menu{
+   
+    left:0; */
+
+}
+/*--------------- submenu end---------------*/
+/*----------- work section start ----------*/
+.works{
+    padding:15px 0;
+    z-index:0;
+}
+.works .item{
+    position: relative;
+    overflow:hidden; 
+    margin-bottom: 10px; 
+   
+}
+.works .item-title{
+    position: absolute;
+    left:0;
+    bottom:60px;
+    background-color:rgba(0,0,0,0.43);
+    color:black;
+    right:0;
+    text-align:center;
+    opacity:0;
+    transition:all 0.5s ease;
+}
+.works .item-title a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display: block;
+}
+.works .item:hover .item-title{
+   bottom:3px;
+   opacity:1;
+}
+
+.row-2{
+    margin-left: -15px;
+   
+}
+/*----------- work section end ----------*/
+.footer{
+    padding-top:15px;
+}
+.copyright{
+    background-color:#6B8E23;
+    padding: 15px;
+    color:white;
+    border:1px solid black;
+}
+
+/* --------------responsive style start-------------- */
+     @media screen and (max-width:960px){
+       
+        .works .col-3{
+            width:50%;
+        }
+    } 
+
+     @media screen and (max-width:728px){
+       
+        .col-2, .col-3, .col-32, .col-4,  .works .col-3{
+            width:100%;
+        }
+        .nav-menu > ul > li {
+             float:none;
+           
+            
+            }
+            .nav-menu > ul > li a{
+                width:100%;
+               
+            }
+            .menu>li .sub-menu{
+                position: initial;
+                margin-left:14px;
+            }
+            .menu>ul>li .sub-menu{
+                display:block;
+            }
+    }
+   /*
+    @media screen and (max-width:500px){
+        body{
+            background-color:blue;
+        }
+    }
+     
+    @media screen and (max-width:1200px){
+        body{
+            background-color:#ddd;
+        } 
+    }*/
+     
+/* --------------responsive style end-------------- */
+
+
